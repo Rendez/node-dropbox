@@ -1,0 +1,6 @@
+[submodule "support/node-oauth"]
+	path = support/node-oauth
+	url = git@github.com:Rendez/node-oauth.git
+[submodule "support/async"]
+	path = support/async
+	url = git://github.com/ajaxorg/async.js.git

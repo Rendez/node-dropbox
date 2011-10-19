@@ -1,0 +1,6 @@
+.git*
+docs/
+examples/
+support/node-oauth
+test/
+.DS_Store

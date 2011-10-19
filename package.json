@@ -1,0 +1,34 @@
+{
+    name: 'node-dropbox',
+    description: 'A node.js client for the dropbox API with OAuth 1.0',
+    keywords: ['dropbox','dropbox-api', 'oauth', 'rest', 'api'],
+    'dist-tags': {
+        latest: '0.1.0'
+    },
+    maintainers: 'Luis Merino <mail@luismerino.name>',
+    author: 'Luis Merino <mail@luismerino.name>',
+    repository: {
+        type: 'git',
+        url: 'git://github.com/Rendez/node-dropbox.git'
+    },
+    version: '0.1.0',
+    main: 'index',
+    engines: {
+        node: '>=0.4.0'
+    },
+    licenses: {
+        type: 'FreeBSD License',
+        url: 'http://www.freebsd.org/copyright/freebsd-license.html'
+    },
+    bugs: {
+        url: 'http://github.com/rendez/node-dropbox/issues'
+    },
+    dependencies: {
+        'oauth': '>= 0.9.5'
+    },
+    devDependencies: {
+        'http://github.com/fjakobs/async.js': '0.0.5'
+    },
+    scripts: {},
+    directories: {}
+}
