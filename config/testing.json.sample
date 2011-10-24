@@ -1,7 +1,7 @@
 {
     "server": "api.dropbox.com",
     "contentServer": "api-content.dropbox.com",
-    "port": 443,
+    "port": 80,
     "requestTokenUrl": "https://api.dropbox.com/0/oauth/request_token",
     "accessTokenUrl": "https://api.dropbox.com/0/oauth/access_token",
     "authorizationUrl": "https://www.dropbox.com/0/oauth/authorize",
