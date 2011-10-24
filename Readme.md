@@ -11,35 +11,35 @@ Running Tests
 ===
 Two options:
 
- *   `$node test/index.js [testfile]`
- *   `$node/test dropbox/[testfile]`
+   `$node test/index.js [testfile]`
+   `$node/test dropbox/[testfile]`
 
 __Notes:__ To run the test file __client.js__ 2 arguments are required: the base64-encoded tokens key and token secret.
 
 Usage
 ===
-`var Auth = require('./node-dropbox/lib/auth');
-var Client = require('./node-dropbox');`
+`var Auth = require('./node-dropbox/lib/auth');`
+`var Client = require('./node-dropbox');`
 
-`Auth.loadConfig('myConfigFile.json', function(err, config) {
-   var options = {[...]};
-   var oa = Auth.getInstance(options);
-   var dropbox = new Client(apiHost, contentHost, port, oa, accessToken, accessTokenSecret);`
-`
-   dropbox.getFile(..., callback);
-});`
+`Auth.loadConfig('myConfigFile.json', function(err, config) {`
+`   var options = {[...]};`
+`   var oa = Auth.getInstance(options);`
+`   var dropbox = new Client(apiHost, contentHost, port, oa, accessToken, accessTokenSecret);`
+``
+`   dropbox.getFile(..., callback);`
+`});`
 
 Public methods
 ===
-`* accountInfo(callback)
-* getFile(root, path, callback)
-* putFile(root, path, content, [ctype], [callback])
-* metadata(root, path, fileLimit, hash, list, callback)
-* thumbnail(root, path, size, format, callback)
-* copy(root, fromPath, toPath, callback)
-* createFolder(root, path, callback)
-* delete(root, path, callback)
-* move(root, fromPath, toPath, callback)`
+`* accountInfo(callback)`
+`* getFile(root, path, callback)`
+`* putFile(root, path, content, [ctype], [callback])`
+`* metadata(root, path, fileLimit, hash, list, callback)`
+`* thumbnail(root, path, size, format, callback)`
+`* copy(root, fromPath, toPath, callback)`
+`* createFolder(root, path, callback)`
+`* delete(root, path, callback)`
+`* move(root, fromPath, toPath, callback)`
 
 Node Compatibility
 ===
