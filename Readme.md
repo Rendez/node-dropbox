@@ -10,9 +10,11 @@ Fully tested against Dropbox API (http://api.dropbox.com & http://api-content.dr
 Running Tests
 ===
 Two options:
+
 `$node test/index.js [testfile]`
    
 `$node/test dropbox/[testfile]`
+
 __Notes:__ To run the test file __client.js__ 2 arguments are required: the base64-encoded tokens key and token secret.
 
 Usage
