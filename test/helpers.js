@@ -1,3 +1,10 @@
+/*!
+ * Node Dropbox test 'Helpers' module
+ *
+ * Copyright(c) 2011 Luis merino <mail AT luismerino DOT name>
+ * FreeBSD License
+ */
+
 //var Zombie = require('zombie/lib');
 var Auth = require('../lib/auth');
 var Client = require('../lib/client');
@@ -31,7 +38,10 @@ module.exports = {
         return new Client(apiHost, contentHost, port, auth, accessToken, accessTokenSecret);
     },
     
-    // Python's headless browser: uses module 'mechanize.Browser'.
+    /**
+     * Python's headless browser: uses module 'mechanize.Browser'.
+     * @ref Dropbox Python implementation tests.
+     */
     loginAndAuthorize: function(authorizationUrl, config, callback) {
         Path.exists(__dirname + '/token_authorize.py', function(exists) {
             if (!exists)
@@ -52,12 +62,15 @@ module.exports = {
                 callback(new Error(stream + ''));
             });
             child.on('exit', function() {
-                if (child) callback()
+                if (child) {
+                    child.kill();
+                    callback();
+                }
             });
         });
     }
     
-    // Zombie (not working, throws JS compiling errors).
+    // Zombie (not working so far, throws JS compiling errors).
     /*loginAndAuthorize: function(token, config, callback) {
         var url = config.authorizationUrl + '?oauth_token=' + token;
         var parsedUrl = Url.parse(config.authorizationUrl);
@@ -93,7 +106,7 @@ module.exports = {
         });
     }*/
     
-    // Custom mode (unknown mechanism, @todo dropbox team must reveal what requests really need for this to work).
+    // Custom mode (unknown mechanism, @todo dropbox team must reveal what their request really needs, in order for this to work).
     /*loginAndAuthorize: function(token, config, callback) {
         var url = Url.parse(config.authorizationUrl);
         console.log('AUTHORIZING', config.authorizationUrl, token);

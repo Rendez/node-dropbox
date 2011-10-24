@@ -1,3 +1,10 @@
+/*!
+ * Node Dropbox 'Client' test module
+ *
+ * Copyright(c) 2011 Luis merino <mail AT luismerino DOT name>
+ * FreeBSD License
+ */
+
 require.paths.unshift(__dirname + '/../../support');
 
 var Path = require('path');

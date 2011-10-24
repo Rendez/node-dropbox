@@ -3,7 +3,7 @@
     description: 'A node.js client for the dropbox API with OAuth 1.0',
     keywords: ['dropbox','dropbox-api', 'oauth', 'rest', 'api'],
     'dist-tags': {
-        latest: '0.1.0'
+        latest: '0.1.1'
     },
     maintainers: 'Luis Merino <mail@luismerino.name>',
     author: 'Luis Merino <mail@luismerino.name>',
@@ -11,7 +11,7 @@
         type: 'git',
         url: 'git://github.com/Rendez/node-dropbox.git'
     },
-    version: '0.1.0',
+    version: '0.1.1',
     main: 'index',
     engines: {
         node: '>=0.4.0'

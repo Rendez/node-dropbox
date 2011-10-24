@@ -1,3 +1,10 @@
+/*!
+ * Node Dropbox 'Auth' test module
+ *
+ * Copyright(c) 2011 Luis merino <mail AT luismerino DOT name>
+ * FreeBSD License
+ */
+
 require.paths.unshift(__dirname + '/../../support');
 
 var Path = require('path');
@@ -6,6 +13,9 @@ var Auth = require('../../lib/auth');
 var Helpers = require('../helpers');
 var assert = require('assert');
 
+/**
+ * Test suite
+ */
 var tests = {
     
     name: 'auth',
@@ -102,7 +112,7 @@ var tests = {
     }
 };
 
-module.exports = AsyncTest.testcase(tests, 'node-dropbox', 20000);
+var testcase = module.exports = AsyncTest.testcase(tests, 'node-dropbox', 20000);
 
 if (require.main === module) {
     module.exports.exec();
