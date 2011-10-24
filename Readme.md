@@ -10,11 +10,11 @@ Fully tested against Dropbox API (http://api.dropbox.com & http://api-content.dr
 Running Tests
 ===
 Two options:
-
-   `$node test/index.js [testfile]
+```bash
+   $node test/index.js [testfile]
    
-   $node/test dropbox/[testfile]`
-
+   $node/test dropbox/[testfile]
+```
 __Notes:__ To run the test file __client.js__ 2 arguments are required: the base64-encoded tokens key and token secret.
 
 Usage
@@ -28,7 +28,7 @@ Auth.loadConfig('myConfigFile.json', function(err, config) {
    var oa = Auth.getInstance(options);
    var dropbox = new Client(apiHost, contentHost, port, oa, accessToken, accessTokenSecret);
 
-   dropbox.getFile(..., callback);
+   dropbox.getFile([...,] callback);
 });
 ```
 
@@ -63,6 +63,10 @@ __Notes:__ Further testing of previous versions is on the to-do list.
 Author
 ===
 Luis Merino &lt;mail AT luismerino DOT name&gt;
+
+Feedback
+===
+Always highly appreciated. Please, use Github issues :)
 
 License
 ===
