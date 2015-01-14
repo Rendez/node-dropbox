@@ -1,7 +1,7 @@
 NodeJs Dropbox API Client
 ===
 
-**ATTENTION:** This project is deprecated and won't work with the current Dropbox API. Use it as inspiration when forking for a new project. If you wish to be the maintainer write me.
+> **ATTENTION:** This project is deprecated and won't work with the current Dropbox API. Use it as inspiration when forking for a new project. If you wish to be the maintainer write me.
 
 __node-dropbox__ is a Client providing communication between NodeJS and the __Dropbox API__ version 0 (and soon to be version 1).
 
