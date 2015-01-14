@@ -1,6 +1,8 @@
 NodeJs Dropbox API Client
 ===
 
+**ATTENTION:** This project is deprecated and won't work with the current Dropbox API. Use it as inspiration when forking for a new project. If you wish to be the maintainer write me.
+
 __node-dropbox__ is a Client providing communication between NodeJS and the __Dropbox API__ version 0 (and soon to be version 1).
 
 The implementation's client contains full API coverage as in Dropbox's web docs, mobile docs might include some extra functionality and URLs; not discarded as to implemented soon. __node-oauth__ is the middleware used to perform the OAuth 1.0 requests.
